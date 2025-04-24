@@ -23,7 +23,7 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 MODEL_PATH = os.path.join(PROJECT_ROOT, "classifier", "therapal_classifier.sav")
 model = load_model(MODEL_PATH)
 
-st.title("🧠 Therapist Advice Type Classifier")
+st.title("Therapist Advice Type Classifier")
 
 user_input = st.text_area("Enter a therapist's answer:", height=200)
 
