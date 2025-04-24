@@ -85,9 +85,13 @@ if advice_filters:
     filtered_df = filtered_df[filtered_df['adviceType'].isin(advice_filters)]
 
 # Display Results.
-st.markdown("### Search Results")
+
 if not keywords and not topics and not advice_filters:
+    st.markdown("### Sample Results")
     st.markdown("_Try adding keywords or using filters to see more specific results._")
+
+else:
+    st.markdown("### Search Results")
 
 if not filtered_df.empty:
     # Group for question metadata (excluding therapist details, which are answer-specific).
