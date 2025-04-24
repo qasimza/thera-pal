@@ -14,11 +14,12 @@ git clone https://github.com/qasimza/thera-pal.git
 ```
 pip install -r requirements.txt
 ```
-3. Replace the `OPENAI_API_KEY` with your key in assistant.py
+3. Create a `.streamlit/secrets.toml` file in the root directory and add the OPEN_API_KEY to it.
 ```
+touch .streamlit/secrets.toml
 OPEN_API_KEY='insert_your_key'
 ```
-4. Run the app
+5. Run the app
 ```
 streamlit run app/app.py 
 ```
