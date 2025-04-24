@@ -106,3 +106,4 @@ cloudpathlib~=0.21.0
 beautifulsoup4~=4.13.4
 networkx~=3.2.1
 spacy~=3.8.5
+streamlit_tags
