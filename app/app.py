@@ -5,7 +5,6 @@ st.set_page_config(
     page_icon="👋",
 )
 
-
 st.write("# Welcome to TheraPal! 👋")
 
 st.sidebar.success("Select a demo above.")
@@ -22,14 +21,22 @@ st.markdown(
     - 💖 __Emotional Support and Validation__: Empathetic, validating responses that help users feel understood and emotionally safe.  
     - 📚 __Resource Suggestion__: Directing users to professional help, helplines, books, online resources, or specific therapies like CBT or ACT.  
     - 🧠 __Psychoeducation__: Clear explanations of mental health symptoms, conditions, therapy processes, or psychological mechanisms.
-
    
     #### Disclaimer 
     __TheraPal is an experimental tool designed to support therapists by generating suggestions based on a dataset of real counselor responses and large language models. The information provided is not medical advice, and is not a substitute for professional training, clinical judgment, or direct consultation with a licensed mental health professional.__  
 
     While the assistant has been trained on publicly available therapeutic Q&A and guided by best practices in mental health support, its recommendations may not be appropriate for every situation or client. Always evaluate AI-generated guidance within the context of individual patient needs and consult appropriate professionals when necessary.  
    
-    ### 2. 📚 Therapist Q&A Library  
+    ### 2. 🧠 Therapist Advice Type Classifier 
+    It is a multi-class multi-label classifier using LinearSVC with 84% accuracy. This classifier analyzes therapeutic responses and can categorize them into multiple advice types simultaneously (multi-label), across different categories (multi-class).
+    This tool automatically identifies what type(s) of therapeutic support a response contains, categorizing content into the four advice types:
+
+    - Practical Life Advice
+    - Emotional Support and Validation
+    - Resource Suggestion
+    - Psychoeducation
+    
+    ### 3. 📚 Therapist Q&A Library  
     Browse a growing database of real questions answered by professional counselors. Learn from peer experiences and deepen your therapeutic toolkit with insights grounded in practice.  
 """
 )
