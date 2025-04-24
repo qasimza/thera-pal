@@ -3,7 +3,7 @@ import streamlit as st
 
 
 # Configuration
-OPENAI_API_KEY = ''
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 MODEL = "gpt-4.1-mini"
 
 # Define advice types and their descriptions
