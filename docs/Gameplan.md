@@ -1,5 +1,9 @@
 # TheraPal
 
+## Goal 
+
+Your goal is to create a website that mental health counselors can use when they need some guidance on how to best help a patient.
+
 ## High-Level Strategy
 __Time Limit__: 4 hours (5 maximum)
 
